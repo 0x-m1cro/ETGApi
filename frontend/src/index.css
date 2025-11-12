@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn-primary {
+    background-color: theme(colors.blue.600);
+    color: theme(colors.white);
+    padding: theme(spacing.2) theme(spacing.4);
+    border-radius: theme(borderRadius.lg);
+    font-weight: theme(fontWeight.medium);
+    transition: background-color 0.2s;
+  }
+  
+  .btn-primary:hover:not(:disabled) {
+    background-color: theme(colors.blue.700);
+  }
+  
+  .btn-primary:focus {
+    outline: 2px solid theme(colors.blue.500);
+    outline-offset: 2px;
+  }
+  
+  .btn-primary:disabled {
+    background-color: theme(colors.gray.300);
+    cursor: not-allowed;
+  }
+  
+  .btn-secondary {
+    background-color: theme(colors.gray.200);
+    color: theme(colors.gray.800);
+    padding: theme(spacing.2) theme(spacing.4);
+    border-radius: theme(borderRadius.lg);
+    font-weight: theme(fontWeight.medium);
+    transition: background-color 0.2s;
+  }
+  
+  .btn-secondary:hover:not(:disabled) {
+    background-color: theme(colors.gray.300);
+  }
+  
+  .btn-secondary:focus {
+    outline: 2px solid theme(colors.gray.400);
+    outline-offset: 2px;
+  }
+  
+  .btn-secondary:disabled {
+    background-color: theme(colors.gray.100);
+    cursor: not-allowed;
+  }
+  
+  .btn-danger {
+    background-color: theme(colors.red.600);
+    color: theme(colors.white);
+    padding: theme(spacing.2) theme(spacing.4);
+    border-radius: theme(borderRadius.lg);
+    font-weight: theme(fontWeight.medium);
+    transition: background-color 0.2s;
+  }
+  
+  .btn-danger:hover:not(:disabled) {
+    background-color: theme(colors.red.700);
+  }
+  
+  .btn-danger:focus {
+    outline: 2px solid theme(colors.red.500);
+    outline-offset: 2px;
+  }
+  
+  .btn-danger:disabled {
+    background-color: theme(colors.gray.300);
+    cursor: not-allowed;
+  }
+  
+  .input-field {
+    border: 1px solid theme(colors.gray.300);
+    border-radius: theme(borderRadius.lg);
+    padding: theme(spacing.2) theme(spacing.4);
+    width: 100%;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 0 2px theme(colors.blue.500);
+  }
+  
+  .card {
+    background-color: theme(colors.white);
+    border-radius: theme(borderRadius.xl);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+  }
+}
+
+body {
+  background-color: theme(colors.gray.50);
+  color: theme(colors.gray.900);
+}

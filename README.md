@@ -1,57 +1,78 @@
-# RateHawk API Integration
+# RateHawk API Integration - Full Stack Application
 
-Production-ready Node.js/TypeScript API server for integrating with Emerging Travel Group (ETG) API v3 (RateHawk) for comprehensive hotel booking solutions.
+Enterprise-grade full-stack application for integrating with Emerging Travel Group (ETG) API v3 (RateHawk) for comprehensive hotel booking solutions.
 
-## Features
+## 🏗️ Architecture
 
-✅ **3-Step Search Workflow** - Region/Hotels/Geo search → Hotelpage details → Mandatory prebook verification
+This is a monorepo containing:
 
-✅ **3-Step Booking Workflow** - Booking form → Finish booking → Status polling with webhook support
+- **Backend** (`/backend`) - Production-ready Node.js/TypeScript API server
+- **Frontend** (`/frontend`) - Modern React/TypeScript application with Vite and TailwindCSS
 
-✅ **Complete API Coverage** - All required ETG endpoints implemented with proper retry logic
+## ✨ Features
 
-✅ **Production Ready** - TypeScript, PostgreSQL, Redis, Winston logging, comprehensive error handling
+### Backend
+- ✅ 3-Step Search Workflow (Region/Hotels/Geo → Hotelpage → Prebook)
+- ✅ 3-Step Booking Workflow (Form → Finish → Status polling/webhook)
+- ✅ Complete ETG API Coverage with retry logic
+- ✅ PostgreSQL + Redis + Winston logging
+- ✅ ETG Certified implementation
 
-✅ **ETG Certified** - Follows all ETG integration guidelines and best practices
+### Frontend
+- ✅ Professional hotel search interface
+- ✅ Booking management dashboard
+- ✅ Real-time booking status tracking
+- ✅ Responsive design with TailwindCSS
+- ✅ TypeScript for type safety
+- ✅ Enterprise-grade architecture
 
-## Quick Start
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js 18+
+- PostgreSQL
+- Redis
+
+### Backend Setup
 
 ```bash
+cd backend
 npm install
-cp .env.example .env  # Configure your ETG credentials
-npm run db:setup      # Initialize database
-npm run dev           # Start development server
+cp ../.env.example .env  # Configure your ETG credentials
+npm run db:setup         # Initialize database
+npm run dev              # Start on http://localhost:3000
 ```
 
-See [GETTING_STARTED.md](./GETTING_STARTED.md) for detailed setup instructions.
+### Frontend Setup
 
-## Documentation
+```bash
+cd frontend
+npm install
+npm run dev              # Start on http://localhost:5173
+```
 
-- [Getting Started Guide](./GETTING_STARTED.md) - Quick setup and basic usage
-- [Implementation Guide](./IMPLEMENTATION.md) - Comprehensive API documentation and architecture
+## 📚 Documentation
 
-## API Endpoints
+- [Backend Documentation](./backend/README.md)
+- [Frontend Documentation](./frontend/README.md)
+- [PRD - Product Requirements](./prd.md)
 
-- `POST /api/v1/search/region` - Search hotels by region
-- `POST /api/v1/search/hotels` - Search specific hotels (max 300)
-- `POST /api/v1/search/geo` - Search by geo-location
-- `POST /api/v1/search/hotelpage` - Get hotel details (cached 1 hour)
-- `POST /api/v1/search/prebook` - Verify rate (mandatory, no caching)
-- `POST /api/v1/booking` - Create booking
-- `GET /api/v1/booking/:orderId` - Get booking details
-- `POST /api/v1/booking/:orderId/cancel` - Cancel booking
-- `POST /api/v1/webhook/booking-status` - Webhook for ETG updates
+## 🛠️ Tech Stack
 
-## Tech Stack
+### Backend
+- Node.js 18+ with TypeScript
+- Express.js
+- PostgreSQL & Redis
+- Winston, Zod, Jest
 
-- **Node.js** 18+ with TypeScript
-- **Express.js** for API server
-- **PostgreSQL** for data persistence
-- **Redis** for caching
-- **Winston** for logging
-- **Zod** for validation
-- **Jest** for testing
+### Frontend
+- React 18 with TypeScript
+- Vite
+- TailwindCSS
+- React Router
+- Axios
+- React Query
 
-## License
+## 📝 License
 
 ISC
