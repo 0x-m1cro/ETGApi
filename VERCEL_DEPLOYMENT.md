@@ -2,6 +2,12 @@
 
 This guide explains how to deploy both the backend (Node.js + Express) and frontend (Vite.js) to Vercel.
 
+## Quick Links
+
+- 📋 [Environment Variables Reference](./ENVIRONMENT_VARIABLES.md)
+- 🚀 [Quick Deploy Guide](./QUICK_DEPLOY.md)
+- 🔄 [Migration from Local to Vercel](./backend/MIGRATION_TO_VERCEL.md)
+
 ## Architecture Overview
 
 - **Backend**: Serverless Node.js functions running Express on Vercel
