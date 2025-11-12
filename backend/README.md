@@ -16,6 +16,12 @@ Production-ready Node.js/TypeScript API server for integrating with Emerging Tra
 
 ## Quick Start
 
+### Deploy to Vercel
+
+See [Vercel Deployment Guide](../VERCEL_DEPLOYMENT.md) for deploying to Vercel with serverless functions.
+
+### Local Development
+
 ```bash
 cd backend
 npm install
@@ -57,6 +63,7 @@ See [GETTING_STARTED.md](./GETTING_STARTED.md) for detailed setup instructions.
 
 - `npm run dev` - Start development server with hot reload
 - `npm run build` - Build TypeScript to JavaScript
+- `npm run vercel-build` - Build for Vercel deployment
 - `npm start` - Start production server
 - `npm test` - Run tests
 - `npm run lint` - Lint code
