@@ -1,0 +1,16 @@
+node_modules
+.env
+.env.local
+.env.*.local
+*.log
+logs
+coverage
+.vscode
+.idea
+*.test.ts
+__tests__
+jest.config.js
+.prettierrc
+.eslintrc.json
+README.md
+database/setup.ts

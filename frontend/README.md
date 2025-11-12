@@ -28,19 +28,25 @@ Enterprise-grade React TypeScript application for hotel search and booking manag
 
 ## 🚀 Quick Start
 
-### Prerequisites
+### Deploy to Vercel
+
+See [Vercel Deployment Guide](../VERCEL_DEPLOYMENT.md) for deploying to Vercel.
+
+### Local Development
+
+#### Prerequisites
 
 - Node.js 18+
 - Backend API running on http://localhost:3000
 
-### Installation
+#### Installation
 
 \`\`\`bash
 cd frontend
 npm install
 \`\`\`
 
-### Configuration
+#### Configuration
 
 \`\`\`bash
 cp .env.example .env
@@ -52,7 +58,7 @@ Edit \`.env\` and configure the backend API URL:
 VITE_API_BASE_URL=http://localhost:3000/api/v1
 \`\`\`
 
-### Development
+#### Development
 
 \`\`\`bash
 npm run dev
@@ -60,7 +66,7 @@ npm run dev
 
 The application will be available at http://localhost:5173
 
-### Build for Production
+#### Build for Production
 
 \`\`\`bash
 npm run build
